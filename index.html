@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evette's Art Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for elegance -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,400italic" rel="stylesheet">
+</head>
+<body>
+    <header class="header-banner animate-fadein">
+        <img src="evafanart.png" alt="Evette Banner" class="banner-img">
+        <div class="avatar-container">
+            <img src="evasunset.png" alt="Evette Avatar" class="avatar-img">
+            <h1>Evette's Art Portfolio</h1>
+            <p class="subtitle">Luxury Art Gallery</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#fanart">Fanart</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#tos">Terms & Service</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="aboutme" class="card animate-slidein">
+        <h2>About Me</h2>
+        <p>
+            Welcome! I'm Evette, a passionate artist who loves drawing for fun. This site is a curated portfolio of my digital adventures—no commissions, just pure creative joy. Enjoy exploring my work!
+        </p>
+    </section>
+
+    <section id="gallery" class="card animate-slidein">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <img src="evafanart.png" alt="Banner Art" class="gallery-item">
+            <img src="evasunset.png" alt="Avatar Art" class="gallery-item">
+        </div>
+    </section>
+
+    <section id="fanart" class="card animate-slidein">
+        <h2>Fanart</h2>
+        <div class="gallery-grid">
+            <img src="micey1.png" alt="Micey Fanart 1" class="gallery-item">
+            <img src="micey2.png" alt="Micey Fanart 2" class="gallery-item">
+        </div>
+    </section>
+
+    <section id="feedback" class="card animate-slidein">
+        <h2>Feedback</h2>
+        <form>
+            <label for="name">Name or Nickname (optional):</label>
+            <input type="text" id="name" name="name">
+
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Feedback</button>
+        </form>
+        <p class="note">* This is a portfolio for fun. Your kind feedback is always appreciated!</p>
+    </section>
+
+    <section id="tos" class="card animate-slidein">
+        <h2>Terms & Service</h2>
+        <ul>
+            <li>This portfolio is for personal and non-commercial display only.</li>
+            <li>No commissions or commercial art requests are accepted.</li>
+            <li>All artworks are original unless stated as fanart (credits given where due).</li>
+            <li>Do not use or repost artwork without permission.</li>
+            <li>Be respectful and kind in your feedback.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Evette | Art Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
