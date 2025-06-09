@@ -1,101 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Evette's Art Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <!-- Google Fonts for elegance -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Roboto:400,400italic" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Evette's Art Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header class="header-banner animate-fadein">
-        <img src="evafanart.png" alt="Evette Banner" class="banner-img">
-        <div class="avatar-container">
-            <img src="evasunset.png" alt="Evette Avatar" class="avatar-img">
-            <h1>Evette's Art Portfolio</h1>
-            <p class="subtitle">Luxury Art Gallery</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#aboutme">About Me</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#fanart">Fanart</a></li>
-                <li><a href="#feedback">Feedback</a></li>
-                <li><a href="#tos">Terms & Service</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="aboutme" class="card animate-slidein">
-        <h2>About Me</h2>
-        <p>
-            Welcome! I'm Evette, a passionate artist who loves drawing for fun. This site is a curated portfolio of my digital adventures—no commissions, just pure creative joy. Enjoy exploring my work!
-        </p>
+  <header>
+    <h1>Evette's Art Portfolio</h1>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#fanart">Fanart</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#terms">Terms & Service</a>
+    </nav>
+  </header>
+  <main>
+    <section id="about" class="card animate-slidein">
+      <h2>About Me</h2>
+      <p>
+        Hi! I'm Evette, a self-taught artist who loves drawing and creating digital art just for fun. This portfolio is my personal space to share what I create—no commissions, just pure creative joy. Enjoy exploring my work!
+      </p>
     </section>
 
-<section id="gallery" class="card animate-slidein">
-  <h2>Gallery</h2>
-  <div class="gallery-grid">
-    <div class="gallery-frame">
-      <img src="minecraft4.png" alt="Minecraft Cozy Red Room" class="gallery-img" draggable="false" oncontextmenu="return false;">
-    </div>
-    <div class="gallery-frame">
-      <img src="minecraft3.png" alt="Minecraft Portal Garden" class="gallery-img" draggable="false" oncontextmenu="return false;">
-    </div>
-    <div class="gallery-frame">
-      <img src="minecraft2.png" alt="Minecraft Blue Lanterns" class="gallery-img" draggable="false" oncontextmenu="return false;">
-    </div>
-    <div class="gallery-frame">
-      <img src="minecraft1.png" alt="Minecraft Cherry Blossom Forest" class="gallery-img" draggable="false" oncontextmenu="return false;">
-    </div>
-  </div>
-</section>
+    <section id="gallery" class="card animate-slidein">
+      <h2>Gallery</h2>
+      <div class="gallery-grid">
+        <div class="gallery-frame">
+          <img src="minecraft4.png" alt="Cozy Red Room" class="gallery-img" draggable="false" oncontextmenu="return false;">
+        </div>
+        <div class="gallery-frame">
+          <img src="minecraft3.png" alt="Portal Garden" class="gallery-img" draggable="false" oncontextmenu="return false;">
+        </div>
+        <div class="gallery-frame">
+          <img src="minecraft2.png" alt="Blue Lanterns" class="gallery-img" draggable="false" oncontextmenu="return false;">
+        </div>
+        <div class="gallery-frame">
+          <img src="minecraft1.png" alt="Cherry Blossom Forest" class="gallery-img" draggable="false" oncontextmenu="return false;">
+        </div>
+      </div>
+    </section>
 
     <section id="fanart" class="card animate-slidein">
-        <h2>Fanart</h2>
-        <div class="gallery-grid">
-            <img src="micey1.png" alt="Micey Fanart 1" class="gallery-item">
-            <img src="micey2.png" alt="Micey Fanart 2" class="gallery-item">
+      <h2>Fanart</h2>
+      <div class="fanart-grid">
+        <div class="fanart-frame">
+          <img src="fanart1.png" alt="Fanart 1" class="fanart-img">
         </div>
+        <div class="fanart-frame">
+          <img src="fanart2.png" alt="Fanart 2" class="fanart-img">
+        </div>
+      </div>
     </section>
 
-    <section id="feedback" class="card animate-slidein">
+    <div class="footer-panels">
+      <section id="feedback" class="footer-panel card animate-slidein">
         <h2>Feedback</h2>
         <form>
-            <label for="name">Name or Nickname (optional):</label>
-            <input type="text" id="name" name="name">
-
-            <label for="message">Your Feedback:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Send Feedback</button>
+          <label for="name">Name or Nickname (optional):</label>
+          <input type="text" id="name" name="name" autocomplete="off" />
+          <label for="feedback-text">Your Feedback:</label>
+          <textarea id="feedback-text" name="feedback" rows="4"></textarea>
+          <button type="submit">Send Feedback</button>
         </form>
         <p class="note">* This is a portfolio for fun. Your kind feedback is always appreciated!</p>
-        <div class="footer-panels">
-  <section class="footer-panel">...</section>
-  <section class="footer-panel">...</section>
-</div>
-    </section>
-
-    <section id="tos" class="card animate-slidein">
+      </section>
+      <section id="terms" class="footer-panel card animate-slidein">
         <h2>Terms & Service</h2>
         <ul>
-            <li>This portfolio is for personal and non-commercial display only.</li>
-            <li>No commissions or commercial art requests are accepted.</li>
-            <li>All artworks are original unless stated as fanart (credits given where due).</li>
-            <li>Do not use or repost artwork without permission.</li>
-            <li>Be respectful and kind in your feedback.</li>
+          <li>This portfolio is for personal and non-commercial display only.</li>
+          <li>No commissions or commercial art requests are accepted.</li>
+          <li>All artworks are original unless stated as fanart (credits given where due).</li>
+          <li>Do not use or repost artwork without permission.</li>
+          <li>Be respectful and kind in your feedback.</li>
         </ul>
-        <div class="footer-panels">
-  <section class="footer-panel">...</section>
-  <section class="footer-panel">...</section>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Evette | Art Portfolio. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Evette | Art Portfolio. All rights reserved.</p>
+  </footer>
+  <script>
+    // Simple page load animation
+    window.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.animate-slidein').forEach(el => {
+        el.classList.add('slidein');
+      });
+    });
+  </script>
 </body>
 </html>
