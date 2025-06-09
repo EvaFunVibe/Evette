@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>EvaFV's Corner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sticky Navigation with "More" menu -->
+  <header class="site-header">
+    <div class="header-left">
+      <img src="avatar.png" alt="EvaFV" class="header-avatar" />
+      <span class="site-title">EvaFV's Corner</span>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li class="nav-more">
+          <button class="more-btn" aria-label="More" tabindex="0">More &#x25BC;</button>
+          <ul class="more-dropdown">
+            <li><a href="#fanart">Fan Art</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Poster Section -->
+  <section class="hero-section animate-on-scroll" id="home">
+    <div class="hero-background">
+      <div class="stripe-bg"></div>
+      <img src="poster.png" alt="Main Poster" class="hero-poster" />
+    </div>
+    <div class="hero-content">
+      <h1 class="main-title">EvaFV's Corner</h1>
+      <h2 class="subtitle">Digital Art & Minecraft Worlds</h2>
+      <p class="hero-desc">A creative space for art, fun, and inspiration.<br>Explore, enjoy, and be kind!</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section animate-on-scroll" id="gallery">
+    <div class="section-title">Gallery</div>
+    <div class="gallery-poster">
+      <img src="poster.png" alt="Main Poster" class="poster-img" />
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item img-guard animate-on-scroll">
+        <img src="minecraft1.png" alt="Minecraft 1" class="gallery-img no-download" />
+        <span class="img-overlay"></span>
+      </div>
+      <div class="gallery-item img-guard animate-on-scroll">
+        <img src="minecraft2.png" alt="Minecraft 2" class="gallery-img no-download" />
+        <span class="img-overlay"></span>
+      </div>
+      <div class="gallery-item img-guard animate-on-scroll">
+        <img src="minecraft3.png" alt="Minecraft 3" class="gallery-img no-download" />
+        <span class="img-overlay"></span>
+      </div>
+      <div class="gallery-item img-guard animate-on-scroll">
+        <img src="minecraft4.png" alt="Minecraft 4" class="gallery-img no-download" />
+        <span class="img-overlay"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fan Art Section -->
+  <section class="fanart-section animate-on-scroll" id="fanart">
+    <div class="section-title">Fan Art</div>
+    <div class="fanart-grid">
+      <div class="fanart-item img-guard animate-on-scroll">
+        <img src="fanart1.png" alt="Fanart 1" class="fanart-img no-download" />
+        <span class="img-overlay"></span>
+      </div>
+      <div class="fanart-item img-guard animate-on-scroll">
+        <img src="fanart2.png" alt="Fanart 2" class="fanart-img no-download" />
+        <span class="img-overlay"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer animate-on-scroll" id="contact">
+    <div class="footer-main">
+      <img src="avatar.png" alt="EvaFV" class="footer-avatar" />
+      <div class="footer-text">
+        <div class="footer-title">Thank you for visiting!</div>
+        <div class="footer-desc">
+          <span>- EvaFV</span><br>
+          <span class="footer-subdesc">Minecraft Stuff & Digital Art</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 EvaFV | Art Portfolio. All rights reserved.
+    </div>
+  </footer>
+  <script src="prevent-download.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
