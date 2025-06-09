@@ -7,21 +7,25 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Evette's Art Portfolio</h1>
-    <nav>
-      <a href="#about">About Me</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#fanart">Fanart</a>
-      <a href="#feedback">Feedback</a>
-      <a href="#terms">Terms & Service</a>
-    </nav>
-  </header>
+  <div class="banner">
+    <img src="banner.png" alt="Banner" class="banner-img" />
+    <div class="avatar-container">
+      <img src="avatar.png" alt="Evette Avatar" class="avatar" />
+      <h1>Evette's Art Portfolio</h1>
+    </div>
+  </div>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#fanart">Fanart</a>
+    <a href="#feedback">Feedback</a>
+    <a href="#terms">Terms</a>
+  </nav>
   <main>
     <section id="about" class="card animate-slidein">
       <h2>About Me</h2>
       <p>
-        Hi! I'm Evette, a self-taught artist who loves drawing and creating digital art just for fun. This portfolio is my personal space to share what I create—no commissions, just pure creative joy. Enjoy exploring my work!
+        Hi! I'm Evette, a self-taught artist who loves drawing and creating digital art just for fun. This portfolio is my space to share what I create—no commissions, just pure creative joy. Enjoy exploring my work!
       </p>
     </section>
 
@@ -58,9 +62,9 @@
     <div class="footer-panels">
       <section id="feedback" class="footer-panel card animate-slidein">
         <h2>Feedback</h2>
-        <form>
+        <form autocomplete="off">
           <label for="name">Name or Nickname (optional):</label>
-          <input type="text" id="name" name="name" autocomplete="off" />
+          <input type="text" id="name" name="name" />
           <label for="feedback-text">Your Feedback:</label>
           <textarea id="feedback-text" name="feedback" rows="4"></textarea>
           <button type="submit">Send Feedback</button>
