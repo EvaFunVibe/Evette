@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>EvaFV's Corner</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <img src="avatar.png" alt="EvaFV" class="header-avatar" />
+      <span class="site-title">EvaFV's Corner</span>
+    </div>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li class="nav-more">
+          <button class="more-btn" aria-label="More" tabindex="0">More ▼</button>
+          <ul class="more-dropdown">
+            <li><a href="#fanart">Fan Art</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg">
+        <img src="hero-bg.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="hero-content">
+        <img src="hero-avatar.png" class="hero-avatar" alt="EvaFV Art" />
+        <h1>EvaFV's Corner</h1>
+        <h2>Digital Art & Minecraft Worlds</h2>
+        <p>A creative space for art, fun, and inspiration.<br>Explore, enjoy, and be kind!</p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="gallery-section">
+      <h2 class="section-title">Gallery</h2>
+      <div class="gallery-featured-wrapper">
+        <img src="gallery-collage.png" alt="Gallery Featured" class="gallery-featured" />
+      </div>
+      <div class="gallery-grid">
+        <img src="gallery1.png" class="gallery-thumb" alt="Gallery 1" />
+        <img src="gallery2.png" class="gallery-thumb" alt="Gallery 2" />
+        <img src="gallery3.png" class="gallery-thumb" alt="Gallery 3" />
+        <img src="gallery4.png" class="gallery-thumb" alt="Gallery 4" />
+      </div>
+    </section>
+
+    <!-- FAN ART -->
+    <section id="fanart" class="fanart-section">
+      <h2 class="section-title">Fan Art</h2>
+      <div class="fanart-grid">
+        <img src="fanart1.png" class="fanart-thumb" alt="Fanart 1" />
+        <img src="fanart2.png" class="fanart-thumb" alt="Fanart 2" />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-avatar-wrap">
+        <img src="avatar.png" alt="EvaFV" class="footer-avatar" />
+      </div>
+      <div class="footer-text">
+        <h2>Thank you for visiting!</h2>
+        <div>- EvaFV<br><span>Minecraft Stuff & Digital Art</span></div>
+      </div>
+      <div class="footer-note">
+        &copy; 2025 EvaFV | Art Portfolio. All rights reserved.
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
