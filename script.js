@@ -27,3 +27,18 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+// Existing code...
+
+// Prevent right click on the whole page
+document.addEventListener('contextmenu', function(e) {
+    // Only block on images
+    if (e.target.tagName === 'IMG') {
+        e.preventDefault();
+    }
+});
+
+// Prevent dragging images
+document.querySelectorAll('img').forEach(img => {
+    img.setAttribute('draggable', 'false');
+    img.addEventListener('dragstart', e => e.preventDefault());
+});
