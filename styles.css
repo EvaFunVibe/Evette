@@ -243,3 +243,7 @@ img {
     user-select: none;            /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */
     pointer-events: auto;
 }
+body {
+  background: linear-gradient(135deg, #18181b 0%, #222229 100%);
+  /* Optional: add a subtle SVG overlay for extra luxury */
+  /* background-image: url('gold-lines.svg');
